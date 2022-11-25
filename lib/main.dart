@@ -6,35 +6,43 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.red),
-      home: Scaffold(
-        appBar: AppBar(title: Text(titl, style: const TextStyle(
-          fontSize: 17,
-          color: them,
-          fontFamily: 'Monotype Corsiva'
-        ),)),
-
-      )
-    );
+        theme: ThemeData(primarySwatch: Colors.red),
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text(
+              titl,
+              style: const TextStyle(
+                  fontSize: 24, color: wht, fontFamily: 'Lobster'),
+            ),
+            centerTitle: true,
+          ),
+          body: Center(
+            child: Text(
+              hom,
+              style: const TextStyle(
+                  fontSize: 17, color: homCol, fontFamily: 'Times New Roman'),
+            ),
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              print('clicked');
+            },
+            backgroundColor: homCol,
+            child: Text(
+              pres,
+              style: const TextStyle(
+                  fontSize: 16, color: wht, fontFamily: 'Times New Roman'),
+            ),
+          ),
+        ));
   }
 }
-
-
-// Text(hom, style: const TextStyle(
-// fontSize: 17,
-// color: homCol,
-// fontFamily: 'Times New Roman'
-// ),),
-
-
-
-
 
 // class MyApp extends StatelessWidget {
 //   const MyApp({super.key});
