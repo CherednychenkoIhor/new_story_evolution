@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget{
     );
   }
 }
+
+
 // Text(hom, style: const TextStyle(
 // fontSize: 17,
 // color: homCol,
